@@ -1,0 +1,90 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+html,body{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height:100%;
+  font-family: 'Merriweather', serif;
+}
+.bg_heart{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+.home_area::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #0c1118;
+    opacity: .8;
+    z-index: -2;
+    mix-blend-mode: hard-light;
+}
+.container {
+    text-align: center;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    padding-top: 6rem;
+}
+
+
+.heart{
+  position:absolute;
+  top:-50%;
+  -ms-transform:rotate(-45deg);
+      transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -m-transform:rotate(-45deg);
+}
+.home_area{
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.heart:before{
+  position:absolute;
+  top:-50%;
+  left:0;
+  display:block;
+  content:"";
+  width:100%;
+  height:100%;
+  background: inherit;
+  border-radius:100%;
+}
+.heart:after{
+  position:absolute;
+  top:0;
+  right:-50%;
+  display:block;
+  content:"";
+  width:100%;
+  height:100%;
+  background:inherit;
+  border-radius:100%;
+}
+
+@keyframes love {
+  0%{top:110%}
+}
+@-webkit-keyframes love {
+  0%{top:110%}
+}
